@@ -1,0 +1,13 @@
+# AI guidelines and local rules
+GEMINI.md
+rule.md
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
