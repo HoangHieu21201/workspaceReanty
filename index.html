@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reanty - Find the best Real Estate on your country</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- HEADER SECTION -->
+  <header class="header">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container top-bar__container">
+        
+        <div class="top-bar__left">
+          <ul class="top-bar__info-list">
+            <li class="top-bar__info-item">
+              <a href="mailto:Info@webmail.com" class="top-bar__info-link">
+                <span class="top-bar__info-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </span>
+                <span class="top-bar__info-text">Info@webmail.com</span>
+              </a>
+            </li>
+            <li class="top-bar__info-item">
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="top-bar__info-link" aria-label="Location: 547 ns tower St. anglo City, USA">
+                <span class="top-bar__info-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </span>
+                <span class="top-bar__info-text">547 ns tower St. anglo City, USA</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="top-bar__right">
+          <ul class="top-bar__social-list">
+            <li class="top-bar__social-item">
+              <a href="#" class="top-bar__social-link" aria-label="Facebook">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+            </li>
+            <li class="top-bar__social-item">
+              <a href="#" class="top-bar__social-link is-active" aria-label="Twitter">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </a>
+            </li>
+            <li class="top-bar__social-item">
+              <a href="#" class="top-bar__social-link" aria-label="Instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </li>
+            <li class="top-bar__social-item">
+              <a href="#" class="top-bar__social-link" aria-label="YouTube">
+                <svg width="16" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.5l5.75 3.26-5.75 3.26z"></path>
+                </svg>
+              </a>
+            </li>
+            <li class="top-bar__social-item">
+              <a href="#" class="top-bar__social-link" aria-label="Pinterest">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.334 1.371-.053.224-.174.271-.401.165-1.495-.696-2.43-2.879-2.43-4.633 0-3.774 2.743-7.24 7.906-7.24 4.149 0 7.371 2.957 7.371 6.908 0 4.123-2.599 7.44-6.207 7.44-1.212 0-2.352-.63-2.743-1.377l-.747 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.538.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar  -->
+    <div class="header-main">
+      <div class="container header-main__container">
+        
+        <!-- Logo bên trái -->
+        <a href="./" class="header-main__logo" aria-label="Reanty Trang chủ">
+          <img src="./assets/images/common/logo.png" alt="Reanty Logo" width="172" height="55" class="header-main__logo-img">
+        </a>
+
+        <!-- Menu điều hướng chính -->
+        <nav class="header-nav" id="headerNav" aria-label="Chính">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link is-active">Home</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#about" class="header-nav__link">About</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#feature" class="header-nav__link">Feature</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#market" class="header-nav__link">Market</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#services" class="header-nav__link">Services</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#contact" class="header-nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Nhóm tác vụ bên trong menu mobile -->
+          <div class="header-nav__mobile-actions">
+            <a href="#login" class="header-nav__mobile-login">Log In</a>
+            <a href="#signup" class="btn btn--primary header-nav__mobile-signup">Sign Up</a>
+          </div>
+        </nav>
+
+        <!-- Log In & Sign Up -->
+        <div class="header-main__actions">
+          <a href="#login" class="header-main__login">Log In</a>
+          <a href="#signup" class="btn btn--primary header-main__btn-signup">Sign Up</a>
+        </div>
+
+        <!-- Nút mở Menu cho màn hình Mobile -->
+        <button class="header-main__toggle" id="headerToggle" aria-label="Mở menu điều hướng" aria-expanded="false">
+          <span class="header-main__toggle-bar"></span>
+          <span class="header-main__toggle-bar"></span>
+          <span class="header-main__toggle-bar"></span>
+        </button>
+
+      </div>
+    </div>
+
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <!-- HERO BANNER SECTION -->
+    <section class="hero">
+      <div class="container hero__container">
+        
+        <div class="hero__body">
+
+          <div class="hero__content">
+            
+            <div class="hero__title-wrap">
+              <h1 class="hero__title">
+                Find the best Real Estate on your country .
+              </h1>
+              <svg class="hero__arrow-doodle" width="228" height="122" viewBox="0 0 228 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M124.789 116.024C126.026 115.733 127.135 115.944 128.283 116.368C137.861 119.908 147.745 121.61 157.98 121.463C170.103 121.289 182.038 120.162 193.596 116.122C199.661 114.004 205.623 111.689 211.337 108.758C211.987 108.424 212.687 107.706 213.415 108.23C214.348 108.901 213.6 109.819 213.413 110.602C212.936 112.602 212.264 114.56 211.906 116.581C211.636 118.103 212.656 119.752 213.76 120.027C215.27 120.407 215.865 119.246 216.534 118.266C216.841 117.821 217.142 117.364 217.405 116.893C220.377 111.603 223.32 106.297 226.319 101.018C227.439 99.0424 227.617 97.1051 226.282 95.2203C224.975 93.3729 223.073 93.2459 221.018 93.6205C213.852 94.9166 206.679 96.1759 199.508 97.4686C198.548 97.6417 197.587 97.8743 196.679 98.2158C195.731 98.573 194.916 99.1982 194.984 100.35C195.052 101.532 195.966 101.977 196.976 102.155C197.934 102.325 198.924 102.32 199.887 102.473C200.915 102.63 202.036 102.314 203.04 103.001C202.56 104.091 201.532 104.213 200.681 104.586C189.101 109.663 176.957 112.36 164.354 112.989C156.523 113.381 148.702 113.381 141.019 111.476C140.351 111.309 139.419 111.472 139.253 110.266C142.468 108.12 145.579 105.772 148.521 103.197C165.391 88.4238 163.442 63.7696 148.82 51.261C145.758 48.6418 142.638 46.0755 139.06 44.2522C129.723 39.4999 119.875 38.447 109.998 42.0693C91.2632 48.9482 87.3286 71.0006 91.9194 83.4674C95.3808 92.8777 101.735 100.196 109.647 106.242C110.91 107.209 112.42 107.872 113.581 109.238C112.781 109.898 112.22 109.877 111.688 109.901C103.697 110.249 95.8187 109.485 88.1588 107.169C70.9447 101.961 55.7067 93.1373 42.199 81.4312C33.3035 73.7245 25.994 64.5295 19.4803 54.7718C11.0102 42.0644 5.19022 28.2992 3.5801 12.9749C3.18989 9.27708 3.07735 5.60964 5.23631 2.29904C5.64947 1.66569 6.28136 0.971728 5.48674 0.314774C4.63234 -0.390679 3.85914 0.227141 3.19716 0.824912C2.45416 1.49233 2.00192 2.35713 1.57883 3.24207C0.581825 5.3313 0.114145 7.54949 0.038187 9.84102C-0.311494 20.4041 1.74606 30.5671 5.91206 40.2061C15.1939 61.6625 28.7877 79.9792 47.3933 94.2973C60.6623 104.514 75.2474 112.359 91.8377 115.922C102.792 118.279 113.797 118.623 124.789 116.024ZM124.917 105.738C115.678 101.057 107.662 95.0416 101.883 86.248C95.6536 76.7694 96.5412 62.8915 104.196 54.6103C108.484 49.9717 113.932 47.7321 120.135 47.5538C126.913 47.3607 133.267 48.9207 138.809 53.0784C143.177 56.3556 147.233 59.892 149.74 64.8766C150.821 67.0273 151.481 69.2962 151.747 71.2932C153.598 81.087 151.177 89.2206 144.297 95.9988C140.162 100.072 135.528 103.406 130.206 105.779C128.412 106.581 126.746 106.661 124.917 105.738Z" fill="#FF5A3C"/>
+              </svg>
+            </div>
+
+            <p class="hero__desc">
+              With over 1 million homes for sale available on the website, Renting can match you with a house.
+            </p>
+
+            <div class="hero__actions">
+              <a href="#membership" class="btn btn--primary hero__btn">
+                <span>Start membership</span>
+                <svg class="hero__btn-icon" width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="1 1 7 7 1 13"></polyline>
+                </svg>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="hero__media">
+            <div class="hero__img-wrapper">
+              <img src="./assets/images/banners/hero-banner.jpg" alt="Luxury Real Estate House" width="630" height="490" class="hero__img">
+              
+              <div class="hero__card-revenue">
+                <div class="hero__card-icon">
+                  <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18" cy="14" r="10" fill="#FFB800"/>
+                    <text x="18" y="18" font-size="12" font-family="'Poppins', sans-serif" font-weight="700" fill="#FFFFFF" text-anchor="middle">$</text>
+                    <path d="M12 36V28M12 28L9 31M12 28L15 31" stroke="#FF5A3C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 36V23M20 23L17 26M20 23L23 26" stroke="#FF5A3C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M28 36V18M28 18L25 21M28 18L31 21" stroke="#FF5A3C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="hero__card-value">$7454.21</div>
+                <div class="hero__card-label">Revenue</div>
+              </div>
+
+              <a href="#how-it-works" class="hero__how-it-works" aria-label="Xem video hướng dẫn">
+                <span class="hero__how-text">How it works</span>
+                <span class="hero__how-play">
+                  <svg width="10" height="12" viewBox="0 0 10 12" fill="currentColor">
+                    <polygon points="1 1 9 6 1 11 1 1"></polygon>
+                  </svg>
+                </span>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hero__footer">
+          <div class="hero__thumbs">
+            <div class="hero__thumb hero__thumb--1 hero__thumb--active" aria-label="House 1 preview">
+              <span class="hero__thumb-label">HOUSE 1</span>
+            </div>
+            <div class="hero__thumb hero__thumb--2" aria-label="House 2 preview">
+              <span class="hero__thumb-label">HOUSE 2</span>
+            </div>
+            <div class="hero__thumb hero__thumb--3" aria-label="House 3 preview">
+              <span class="hero__thumb-label">HOUSE 3</span>
+            </div>
+          </div>
+
+          <div class="hero__indicator">
+            <div class="hero__indicator-bars">
+              <span class="hero__indicator-line-active"></span>
+              <span class="hero__indicator-line-track"></span>
+            </div>
+            <div class="hero__indicator-numbers">
+              <span class="hero__indicator-num hero__indicator-num--active">1</span>
+              <span class="hero__indicator-num">2</span>
+              <span class="hero__indicator-num">3</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GUIDES SECTION -->
+    <section class="guides" id="guides">
+      <div class="container guides__container">
+        
+        <div class="guides__header">
+          <span class="guides__subtitle">COMMERCIAL REAL ESTATE</span>
+          <h2 class="guides__title">
+            <span class="guides__title-desktop">Commercial Real Estate<br></span>And Office
+          </h2>
+          <p class="guides__desc guides__desc--desktop">
+            Work with Renting brokers who help you to get started with smart tools to.
+          </p>
+          <p class="guides__desc guides__desc--mobile">
+            Smart tools for every stage of your property journey.
+          </p>
+        </div>
+
+        <div class="guides__grid">
+          
+          <div class="guides__card">
+            <div class="guides__icon-box">
+              <svg class="guides__icon" width="28" height="28" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle class="guides__icon-primary" cx="17" cy="11" r="6" fill="#FF5A3C"/>
+                <path class="guides__icon-primary" d="M7 29C7 23.4772 11.4772 19 17 19C20.1 19 22.86 20.4 24.68 22.6C23.64 24.08 23 25.88 23 27.84C23 28.23 23.03 28.62 23.08 29H7Z" fill="#FF5A3C"/>
+                <circle class="guides__icon-badge-bg" cx="28" cy="27" r="6" fill="#FF5A3C"/>
+                <circle class="guides__icon-badge-ring" cx="28" cy="27" r="4.6" stroke="#FFFFFF" stroke-width="1.2"/>
+                <text class="guides__icon-badge-text" x="28" y="30" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">$</text>
+              </svg>
+            </div>
+            <div class="guides__card-body">
+              <h3 class="guides__card-title">Buyer Guides</h3>
+              <p class="guides__card-desc">
+                <span class="guides__desc-desktop">Nurture valuable leads into customers, and turn one time.</span>
+                <span class="guides__desc-mobile">Turn valuable leads into customers.</span>
+              </p>
+            </div>
+            <span class="guides__card-arrow" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FF5A3C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
+          </div>
+
+          <div class="guides__card">
+            <div class="guides__icon-box">
+              <svg class="guides__icon" width="28" height="28" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle class="guides__icon-primary" cx="17" cy="11" r="6" fill="#FF5A3C"/>
+                <path class="guides__icon-primary" d="M7 29C7 23.4772 11.4772 19 17 19C20.1 19 22.86 20.4 24.68 22.6C23.64 24.08 23 25.88 23 27.84C23 28.23 23.03 28.62 23.08 29H7Z" fill="#FF5A3C"/>
+                <circle class="guides__icon-badge-bg" cx="28" cy="27" r="6" fill="#FF5A3C"/>
+                <circle class="guides__icon-badge-ring" cx="28" cy="27" r="4.6" stroke="#FFFFFF" stroke-width="1.2"/>
+                <text class="guides__icon-badge-text" x="28" y="30" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">$</text>
+              </svg>
+            </div>
+            <div class="guides__card-body">
+              <h3 class="guides__card-title">Renter Guides</h3>
+              <p class="guides__card-desc">
+                <span class="guides__desc-desktop">Build brand awareness on the top social media networks.</span>
+                <span class="guides__desc-mobile">Build awareness across social networks.</span>
+              </p>
+            </div>
+            <span class="guides__card-arrow" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FF5A3C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
+          </div>
+
+          <div class="guides__card">
+            <div class="guides__icon-box">
+              <svg class="guides__icon" width="28" height="28" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path class="guides__icon-primary" d="M17 6L6 16H9V28C9 28.5523 9.44772 29 10 29H21.5C21.18 28.05 21 27.05 21 26C21 21.58 24.58 18 29 18C29.34 18 29.68 18.02 30 18.06V16H31L17 6Z" fill="#FF5A3C"/>
+                <circle class="guides__icon-badge-bg" cx="28" cy="26" r="6" fill="#FF5A3C"/>
+                <circle class="guides__icon-badge-ring" cx="28" cy="26" r="4.6" stroke="#FFFFFF" stroke-width="1.2"/>
+                <text class="guides__icon-badge-text" x="28" y="29" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">$</text>
+              </svg>
+            </div>
+            <div class="guides__card-body">
+              <h3 class="guides__card-title">Seller Guides</h3>
+              <p class="guides__card-desc">
+                <span class="guides__desc-desktop">Get professionally-written content that attracts qualified.</span>
+                <span class="guides__desc-mobile">Attract qualified buyers with expert content.</span>
+              </p>
+            </div>
+            <span class="guides__card-arrow" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FF5A3C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SPACES SECTION (DREAM LIVING SPACES) -->
+    <section class="spaces" id="about">
+      <div class="container spaces__container">
+        
+        <div class="spaces__media">
+          <div class="spaces__media-wrap">
+            
+            <div class="spaces__img-card spaces__img-card--back">
+              <img src="./assets/images/products/space-back.jpg" alt="Minimalist Luxury Interior Living Space" class="spaces__img">
+              
+              <div class="spaces__badge">
+                <svg class="spaces__badge-star" width="24" height="24" viewBox="0 0 24 24" fill="#FF5A3C" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+                <span class="spaces__badge-text">5 Star Rating</span>
+              </div>
+            </div>
+
+            <div class="spaces__img-card spaces__img-card--front">
+              <img src="./assets/images/products/space-front.jpg" alt="Dream Living Modern Villa Architecture" class="spaces__img">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="spaces__content">
+          <h2 class="spaces__title">
+            Dream Living Spaces<br>Setting New Build
+          </h2>
+          
+          <p class="spaces__desc">
+            SeaWire Web is a wireframe kit that has more than 15 popular categories and more than 200 screens
+          </p>
+
+          <div class="spaces__features">
+            
+            <div class="spaces__feature">
+              <div class="spaces__feature-icon">
+                <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M5 13L16 4L27 13V27H19V20H13V27H5V13Z" stroke="#FF5A3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="spaces__feature-body">
+                <h3 class="spaces__feature-title">The perfect Rsidencye</h3>
+                <p class="spaces__feature-desc">Take a deep dive and browse origin neighborhood photos.</p>
+              </div>
+            </div>
+
+            <div class="spaces__feature">
+              <div class="spaces__feature-icon">
+                <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M6 26C6 22 10 19 16 19C22 19 26 22 26 26" stroke="#FF5A3C" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="12" cy="11" r="5" stroke="#FF5A3C" stroke-width="2"/>
+                  <path d="M21 7L26 15H16L21 7Z" fill="#FF5A3C"/>
+                </svg>
+              </div>
+              <div class="spaces__feature-body">
+                <h3 class="spaces__feature-title">Global Arhitect Experts</h3>
+                <p class="spaces__feature-desc">Take a deep dive and browse origin neighborhood photos.</p>
+              </div>
+            </div>
+
+            <div class="spaces__feature">
+              <div class="spaces__feature-icon">
+                <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="15" cy="15" r="11" stroke="#FF5A3C" stroke-width="2"/>
+                  <ellipse cx="15" cy="15" rx="5" ry="11" stroke="#FF5A3C" stroke-width="2"/>
+                  <line x1="4" y1="15" x2="26" y2="15" stroke="#FF5A3C" stroke-width="2"/>
+                  <path d="M22 18C20 18 19 19.5 19 21.5C19 24.5 22 28 22 28C22 28 25 24.5 25 21.5C25 19.5 24 18 22 18Z" fill="#FF5A3C"/>
+                  <circle cx="22" cy="21.5" r="1.2" fill="#FFFFFF"/>
+                </svg>
+              </div>
+              <div class="spaces__feature-body">
+                <h3 class="spaces__feature-title">Built-in a storage capable</h3>
+                <p class="spaces__feature-desc">Take a deep dive and browse origin neighborhood photos.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TODAY SELLS PROPERTIES SECTION -->
+    <section class="properties" id="properties">
+      <div class="container properties__container">
+        
+        <div class="properties__content">
+          
+          <div class="properties__tag">
+            <svg class="properties__tag-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 2L20.66 7V17L12 22L3.34 17V7L12 2Z" stroke="#FF5A3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="12" r="3" stroke="#FF5A3C" stroke-width="2"/>
+            </svg>
+            <span class="properties__tag-text">About home</span>
+          </div>
+
+          <h2 class="properties__title">
+            Today Sells Properties
+          </h2>
+
+          <p class="properties__desc">
+            SeaWire Web is a wireframe kit that has more than 15 popular categories and more than 200 screens
+          </p>
+
+          <ul class="properties__list">
+            <li class="properties__item">
+              <span class="properties__marker"></span>
+              <span class="properties__item-text">Live Music concert at Newyork</span>
+            </li>
+            <li class="properties__item">
+              <span class="properties__marker"></span>
+              <span class="properties__item-text">Our best boat Tour is  j us t for you</span>
+            </li>
+            <li class="properties__item">
+              <span class="properties__marker"></span>
+              <span class="properties__item-text">Live Music concert at Newyork</span>
+            </li>
+            <li class="properties__item">
+              <span class="properties__marker"></span>
+              <span class="properties__item-text">Our best boat Tour is  j us t for you</span>
+            </li>
+            <li class="properties__item">
+              <span class="properties__marker"></span>
+              <span class="properties__item-text">Live Music concert at Newyork</span>
+            </li>
+          </ul>
+
+          <div class="properties__footer">
+            
+            <div class="properties__thumbs" data-active="0">
+              <div class="properties__thumb properties__thumb--active" data-index="0" role="button" aria-label="House 1 preview">
+                <img src="./assets/images/banners/house-thumb-1.jpg" alt="House 1 Thumbnail" class="properties__thumb-img">
+                <span class="properties__thumb-label">HOUSE 1</span>
+              </div>
+              <div class="properties__thumb" data-index="1" role="button" aria-label="House 2 preview">
+                <img src="./assets/images/banners/house-thumb-2.jpg" alt="House 2 Thumbnail" class="properties__thumb-img">
+                <span class="properties__thumb-label">HOUSE 2</span>
+              </div>
+              <div class="properties__thumb" data-index="2" role="button" aria-label="House 3 preview">
+                <img src="./assets/images/banners/house-thumb-3.jpg" alt="House 3 Thumbnail" class="properties__thumb-img">
+                <span class="properties__thumb-label">HOUSE 3</span>
+              </div>
+            </div>
+
+            <div class="properties__nav">
+              <div class="properties__indicator">
+                <div class="properties__indicator-bars">
+                  <span class="properties__indicator-line-active"></span>
+                  <span class="properties__indicator-line-track"></span>
+                </div>
+              </div>
+              <div class="properties__indicator-numbers">
+                <span class="properties__indicator-num properties__indicator-num--active" data-index="0">1</span>
+                <span class="properties__indicator-num" data-index="1">2</span>
+                <span class="properties__indicator-num" data-index="2">3</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="properties__gallery">
+          
+          <div class="properties__gallery-item properties__gallery-item--tall">
+            <img src="./assets/images/products/prop-tall.jpg" alt="House 1 - Luxury Glass Villa with Pool" class="properties__gallery-img" id="propGalleryTall">
+          </div>
+          <div class="properties__gallery-stack">
+            <div class="properties__gallery-item properties__gallery-item--top">
+              <img src="./assets/images/products/prop-kitchen.jpg" alt="House 1 - Modern Minimalist Kitchen Dining Area" class="properties__gallery-img" id="propGalleryTop">
+            </div>
+            <div class="properties__gallery-item properties__gallery-item--bottom">
+              <img src="./assets/images/products/prop-bedroom.jpg" alt="House 1 - Master Bedroom with Balcony View" class="properties__gallery-img" id="propGalleryBottom">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+      <div class="container services__container">
+        
+        <div class="services__header">
+          <h2 class="services__title">Services provide for you</h2>
+          <p class="services__desc">
+            There are many variations of passages of Lorem Ipsum available,<br>
+            but the majority have suffered alteration.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          
+          <article class="services__card">
+            <div class="services__icon-box">
+              <svg class="services__icon" width="46" height="46" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M8 32V18C8 16.8954 8.89543 16 10 16H38C39.1046 16 40 16.8954 40 18V32" stroke="#FF5A3C" stroke-width="2.5" stroke-linecap="round"/>
+                <rect x="13" y="19" width="9" height="6" rx="2" fill="#FF5A3C"/>
+                <rect x="26" y="19" width="9" height="6" rx="2" fill="#FF5A3C"/>
+                <path d="M6 27H42V31C42 32.1046 41.1046 33 40 33H8C6.89543 33 6 32.1046 6 31V27Z" fill="#FF5A3C"/>
+                <line x1="9" y1="33" x2="9" y2="37" stroke="#FF5A3C" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="39" y1="33" x2="39" y2="37" stroke="#FF5A3C" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="services__card-body">
+              <h3 class="services__card-title">Bed Rooms</h3>
+              <p class="services__card-desc">
+                Desktop publishing software like aldus page maker including
+              </p>
+            </div>
+            <a href="#learn-more" class="services__card-link">
+              <span>Learn more</span>
+              <svg class="services__card-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </article>
+
+          <article class="services__card">
+            <div class="services__icon-box">
+              <svg class="services__icon" width="46" height="46" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M8 22H40V27C40 32.5228 35.5228 37 30 37H18C12.4772 37 8 32.5228 8 27V22Z" fill="#FF5A3C"/>
+                <rect x="6" y="20" width="36" height="4" rx="2" fill="#FF5A3C"/>
+                <path d="M12 20V12C12 10.8954 12.8954 10 14 10H17" stroke="#FF5A3C" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M15 12L17 14" stroke="#FF5A3C" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="14" y1="37" x2="12" y2="41" stroke="#FF5A3C" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="34" y1="37" x2="36" y2="41" stroke="#FF5A3C" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="services__card-body">
+              <h3 class="services__card-title">Swimming pool</h3>
+              <p class="services__card-desc">
+                React creative agency amet, consec tetur adipiscing elit.
+              </p>
+            </div>
+            <a href="#learn-more" class="services__card-link">
+              <span>Learn more</span>
+              <svg class="services__card-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </article>
+
+          <article class="services__card">
+            <div class="services__icon-box">
+              <svg class="services__icon" width="46" height="46" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M10 38V12L38 38H10Z" stroke="#FF5A3C" stroke-width="3" stroke-linejoin="round"/>
+                <path d="M16 34V23L27 34H16Z" fill="#FF5A3C" opacity="0.3"/>
+                <line x1="10" y1="18" x2="15" y2="18" stroke="#FF5A3C" stroke-width="2.2" stroke-linecap="round"/>
+                <line x1="10" y1="23" x2="13" y2="23" stroke="#FF5A3C" stroke-width="2.2" stroke-linecap="round"/>
+                <line x1="10" y1="28" x2="15" y2="28" stroke="#FF5A3C" stroke-width="2.2" stroke-linecap="round"/>
+                <line x1="10" y1="33" x2="13" y2="33" stroke="#FF5A3C" stroke-width="2.2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="services__card-body">
+              <h3 class="services__card-title">Copywriting content</h3>
+              <p class="services__card-desc">
+                The standard chunk of used since the 1500s is reproduced
+              </p>
+            </div>
+            <a href="#learn-more" class="services__card-link">
+              <span>Learn more</span>
+              <svg class="services__card-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </article>
+
+          <article class="services__card">
+            <div class="services__icon-box">
+              <svg class="services__icon" width="46" height="46" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M22 10L10 20H13V36H24V26C24 24.8954 24.8954 24 26 24H28" fill="#FF5A3C"/>
+                <path d="M22 10L34 20H31V23" stroke="#FF5A3C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="33" cy="31" r="9" fill="#FF5A3C"/>
+                <circle cx="33" cy="31" r="7.5" stroke="#FFFFFF" stroke-width="1.2"/>
+                <text x="33" y="35" font-family="'Poppins', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">$</text>
+              </svg>
+            </div>
+            <div class="services__card-body">
+              <h3 class="services__card-title">Smart Home</h3>
+              <p class="services__card-desc">
+                The standard chunk of used since the 1500s is reproduced
+              </p>
+            </div>
+            <a href="#learn-more" class="services__card-link">
+              <span>Learn more</span>
+              <svg class="services__card-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </article>
+
+          <article class="services__card">
+            <div class="services__icon-box">
+              <svg class="services__icon" width="46" height="46" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="10" y="20" width="28" height="20" rx="3" fill="#FF5A3C"/>
+                <rect x="8" y="14" width="32" height="7" rx="2" fill="#FF5A3C" opacity="0.9"/>
+                <rect x="22" y="14" width="4" height="26" fill="#FFFFFF"/>
+                <circle cx="24" cy="25" r="2" fill="#FF5A3C"/>
+              </svg>
+            </div>
+            <div class="services__card-body">
+              <h3 class="services__card-title">Libarary area</h3>
+              <p class="services__card-desc">
+                Desktop publishing software like aldus page maker including
+              </p>
+            </div>
+            <a href="#learn-more" class="services__card-link">
+              <span>Learn more</span>
+              <svg class="services__card-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </article>
+
+          <article class="services__card">
+            <div class="services__icon-box">
+              <svg class="services__icon" width="46" height="46" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="21" cy="16" r="7" fill="#FF5A3C"/>
+                <path d="M9 36C9 29.3726 14.3726 24 21 24C24.4178 24 27.4879 25.4283 29.6648 27.7214C27.9942 29.0732 26.9062 31.1396 26.9062 33.4545C26.9062 34.3315 27.0645 35.1741 27.3553 35.955C26.9142 35.9848 26.4633 36 26 36H9Z" fill="#FF5A3C"/>
+                <circle cx="34" cy="33" r="8" fill="#FF5A3C"/>
+                <circle cx="34" cy="33" r="6.6" stroke="#FFFFFF" stroke-width="1.2"/>
+                <text x="34" y="37" font-family="'Poppins', sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">$</text>
+              </svg>
+            </div>
+            <div class="services__card-body">
+              <h3 class="services__card-title">Responsive Duty</h3>
+              <p class="services__card-desc">
+                React creative agency amet, consec tetur adipiscing elit.
+              </p>
+            </div>
+            <a href="#learn-more" class="services__card-link">
+              <span>Learn more</span>
+              <svg class="services__card-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURED PROPERTY SECTION -->
+    <section class="featured" id="featured">
+      <div class="container featured__container">
+        
+        <div class="featured__header">
+          <div class="featured__header-left">
+            <h2 class="featured__title">Featured Property</h2>
+            <p class="featured__desc">
+              Find your suitable house here and stay safe and<br>
+              relaxe with pleasure
+            </p>
+          </div>
+
+          <div class="featured__tabs" role="tablist" aria-label="Property categories">
+            <button class="featured__tab featured__tab--active" role="tab" aria-selected="true" data-filter="appartment">
+              Appartment
+            </button>
+            <button class="featured__tab" role="tab" aria-selected="false" data-filter="vila">
+              Vila
+            </button>
+            <button class="featured__tab" role="tab" aria-selected="false" data-filter="land">
+              Land
+            </button>
+          </div>
+        </div>
+
+        <div class="featured__grid">
+          
+          <article class="featured__card">
+            <div class="featured__media">
+              <img src="./assets/images/products/featured-1.jpg" alt="The Stokes Appartment exterior view" class="featured__img">
+            </div>
+            
+            <div class="featured__card-info">
+              <div class="featured__card-body">
+                <h3 class="featured__card-title">The Stokes Appartment</h3>
+                <div class="featured__location">
+                  <svg class="featured__location-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" stroke="currentColor" stroke-width="1.8"/>
+                  </svg>
+                  <span class="featured__location-text">Cleveland, United States</span>
+                </div>
+              </div>
+
+              <div class="featured__card-bottom">
+                <div class="featured__price">$2,32,120</div>
+                <a href="#property-detail" class="featured__card-btn" aria-label="Explore The Stokes Appartment">
+                  <svg class="featured__arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="featured__card">
+            <div class="featured__media">
+              <img src="./assets/images/products/featured-2.jpg" alt="The Stokes Appartment modern facade" class="featured__img">
+            </div>
+            
+            <div class="featured__card-info">
+              <div class="featured__card-body">
+                <h3 class="featured__card-title">The Stokes Appartment</h3>
+                <div class="featured__location">
+                  <svg class="featured__location-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" stroke="currentColor" stroke-width="1.8"/>
+                  </svg>
+                  <span class="featured__location-text">Cleveland, United States</span>
+                </div>
+              </div>
+
+              <div class="featured__card-bottom">
+                <div class="featured__price">$2,32,120</div>
+                <a href="#property-detail" class="featured__card-btn" aria-label="Explore The Stokes Appartment">
+                  <svg class="featured__arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="featured__card">
+            <div class="featured__media">
+              <img src="./assets/images/products/featured-3.jpg" alt="The Stokes Appartment luxury residence" class="featured__img">
+            </div>
+            
+            <div class="featured__card-info">
+              <div class="featured__card-body">
+                <h3 class="featured__card-title">The Stokes Appartment</h3>
+                <div class="featured__location">
+                  <svg class="featured__location-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" stroke="currentColor" stroke-width="1.8"/>
+                  </svg>
+                  <span class="featured__location-text">Cleveland, United States</span>
+                </div>
+              </div>
+
+              <div class="featured__card-bottom">
+                <div class="featured__price">$2,32,120</div>
+                <a href="#property-detail" class="featured__card-btn" aria-label="Explore The Stokes Appartment">
+                  <svg class="featured__arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="featured__footer">
+          <a href="#explore-properties" class="featured__btn-explore">
+            Explore Property
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 10. PROPERTY SPOTLIGHT BANNER SECTION -->
+    <section class="spotlight" id="spotlight" aria-label="Featured Property Spotlight">
+      <div class="spotlight__bg-wrapper">
+        <img 
+          src="./assets/images/banners/house-water-field.jpg" 
+          alt="Scenic waterfront cottage with green turf roof beside lake and grass field" 
+          class="spotlight__bg-img"
+        >
+        <div class="spotlight__overlay"></div>
+      </div>
+
+      <div class="container spotlight__container">
+        <div class="spotlight__card">
+          <div class="spotlight__card-media">
+            <img 
+              src="./assets/images/products/unit-9a-thumb.jpg" 
+              alt="House beside body of water and grass field - Unit 9A" 
+              class="spotlight__card-img"
+            >
+            <span class="spotlight__card-badge" aria-label="Property verified">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+            </span>
+          </div>
+
+          <div class="spotlight__card-content">
+            <div class="spotlight__card-price">$4,000</div>
+            <div class="spotlight__card-address">242 Metric way</div>
+            
+            <div class="spotlight__amenities">
+              <div class="spotlight__amenity" title="2 Bedrooms">
+                <svg class="spotlight__amenity-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9" />
+                </svg>
+                <span class="spotlight__amenity-val">2</span>
+              </div>
+
+              <div class="spotlight__amenity" title="2 Bathrooms">
+                <svg class="spotlight__amenity-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1Z"/>
+                  <path d="M6 12V5a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1"/>
+                </svg>
+                <span class="spotlight__amenity-val">2</span>
+              </div>
+
+              <div class="spotlight__amenity" title="500 Square Feet">
+                <svg class="spotlight__amenity-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21.3 8.7 8.7 21.3a1 1 0 0 1-1.4 0l-4.6-4.6a1 1 0 0 1 0-1.4L15.3 2.7a1 1 0 0 1 1.4 0l4.6 4.6a1 1 0 0 1 0 1.4Z"/>
+                  <path d="m14 4 2 2M10 8l2 2M6 12l2 2"/>
+                </svg>
+                <span class="spotlight__amenity-val">500sqf</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="spotlight__badge-unit" aria-label="Unit Number 9A">
+          <span class="spotlight__badge-label">UNIT NO.</span>
+          <span class="spotlight__badge-num">9A</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. TESTIMONIALS SECTION -->
+    <section class="testimonials" id="testimonials" aria-label="Customer Testimonials">
+      <div class="container">
+
+        <div class="testimonials__header">
+          <h2 class="testimonials__title">What our customers are saying</h2>
+          <p class="testimonials__desc">We make sure you have a fine distance with the<br>sickness. We make you never lose hope.</p>
+        </div>
+
+        <div class="testimonials__slider-wrap">
+
+          <div class="testimonials__slider" id="testimonials-slider">
+
+            <div class="testimonials__slide" data-index="0">
+              <div class="testimonials__media-wrap">
+                <div class="testimonials__bg-layer"></div>
+                <div class="testimonials__img-frame">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
+                    alt="Yunus Seyhan - Postgraduate Student"
+                    class="testimonials__img"
+                  >
+                </div>
+              </div>
+
+              <div class="testimonials__content">
+                <div class="testimonials__quote-icon" aria-hidden="true">
+                  <svg width="32" height="25" viewBox="0 0 32 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 14.13 19.05 C 14.13 20.55, 13.53 21.87, 12.32 22.99 C 11.11 24.12, 9.68 24.68, 8.04 24.68 C 5.45 24.68, 3.47 23.82, 2.08 22.11 C 0.69 20.4, 0 18.04, 0 15.01 C 0 12.2, 1.19 9.36, 3.58 6.5 C 5.96 3.64, 8.84 1.48, 12.2 0 L 13.75 2.5 C 11.09 3.79, 9 5.29, 7.5 7 C 5.99 8.71, 5.12 10.78, 4.89 13.22 L 6.86 13.22 C 8.32 13.22, 9.51 13.38, 10.43 13.71 C 11.34 14.04, 12.09 14.5, 12.65 15.08 C 13.19 15.64, 13.57 16.27, 13.8 16.95 C 14.02 17.62, 14.13 18.33, 14.13 19.05 Z M 31.46 19.05 C 31.46 20.55, 30.86 21.87, 29.65 22.99 C 28.44 24.12, 27.01 24.68, 25.37 24.68 C 22.78 24.68, 20.8 23.82, 19.41 22.11 C 18.03 20.4, 17.33 18.04, 17.33 15.01 C 17.33 12.2, 18.52 9.36, 20.91 6.5 C 23.29 3.64, 26.17 1.48, 29.53 0 L 31.08 2.5 C 28.42 3.79, 26.34 5.29, 24.83 7 C 23.32 8.71, 22.45 10.78, 22.22 13.22 L 24.2 13.22 C 25.65 13.22, 26.84 13.38, 27.76 13.71 C 28.68 14.04, 29.42 14.5, 29.98 15.08 C 30.52 15.64, 30.91 16.27, 31.13 16.95 C 31.35 17.62, 31.46 18.33, 31.46 19.05 Z"/>
+                  </svg>
+                </div>
+
+                <p class="testimonials__text">We make sure you have a fine distance with the sickness. We make you never lose hope. We make sure you have with the sickness.</p>
+
+                <div class="testimonials__stars" aria-label="5 out of 5 stars">
+                  <img src="./assets/star.svg" alt="" class="testimonials__star-icon" aria-hidden="true">
+                  <img src="./assets/star.svg" alt="" class="testimonials__star-icon" aria-hidden="true">
+                  <img src="./assets/star.svg" alt="" class="testimonials__star-icon" aria-hidden="true">
+                  <img src="./assets/star.svg" alt="" class="testimonials__star-icon" aria-hidden="true">
+                  <img src="./assets/star.svg" alt="" class="testimonials__star-icon" aria-hidden="true">
+                </div>
+
+                <div class="testimonials__author">
+                  <span class="testimonials__author-name">Yunus Seyhan</span>
+                  <span class="testimonials__author-role">Postgraduate Student</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonials__slide" data-index="1">
+              <div class="testimonials__media-wrap">
+                <div class="testimonials__bg-layer"></div>
+                <div class="testimonials__img-frame">
+                  <img
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"
+                    alt="Sarah Mitchell - Real Estate Investor"
+                    class="testimonials__img"
+                  >
+                </div>
+              </div>
+              <div class="testimonials__content">
+                <div class="testimonials__quote-icon" aria-hidden="true">
+                  <svg width="32" height="25" viewBox="0 0 32 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 14.13 19.05 C 14.13 20.55, 13.53 21.87, 12.32 22.99 C 11.11 24.12, 9.68 24.68, 8.04 24.68 C 5.45 24.68, 3.47 23.82, 2.08 22.11 C 0.69 20.4, 0 18.04, 0 15.01 C 0 12.2, 1.19 9.36, 3.58 6.5 C 5.96 3.64, 8.84 1.48, 12.2 0 L 13.75 2.5 C 11.09 3.79, 9 5.29, 7.5 7 C 5.99 8.71, 5.12 10.78, 4.89 13.22 L 6.86 13.22 C 8.32 13.22, 9.51 13.38, 10.43 13.71 C 11.34 14.04, 12.09 14.5, 12.65 15.08 C 13.19 15.64, 13.57 16.27, 13.8 16.95 C 14.02 17.62, 14.13 18.33, 14.13 19.05 Z M 31.46 19.05 C 31.46 20.55, 30.86 21.87, 29.65 22.99 C 28.44 24.12, 27.01 24.68, 25.37 24.68 C 22.78 24.68, 20.8 23.82, 19.41 22.11 C 18.03 20.4, 17.33 18.04, 17.33 15.01 C 17.33 12.2, 18.52 9.36, 20.91 6.5 C 23.29 3.64, 26.17 1.48, 29.53 0 L 31.08 2.5 C 28.42 3.79, 26.34 5.29, 24.83 7 C 23.32 8.71, 22.45 10.78, 22.22 13.22 L 24.2 13.22 C 25.65 13.22, 26.84 13.38, 27.76 13.71 C 28.68 14.04, 29.42 14.5, 29.98 15.08 C 30.52 15.64, 30.91 16.27, 31.13 16.95 C 31.35 17.62, 31.46 18.33, 31.46 19.05 Z"/>
+                  </svg>
+                </div>
+                <p class="testimonials__text">The property listings were incredibly detailed and accurate. Reanty helped me find the perfect investment property within just two weeks of searching. Absolutely phenomenal service.</p>
+                <div class="testimonials__stars" aria-label="5 out of 5 stars">
+                  <img src="./assets/star.svg" alt="" class="testimonials__star-icon" aria-hidden="true">
+                  <img src="./assets/star.svg" alt="" class="testimonials__star-icon" aria-hidden="true">
+                  <img src="./assets/star.svg" alt="" class="testimonials__star-icon" aria-hidden="true">
+                  <img src="./assets/star.svg" alt="" class="testimonials__star-icon" aria-hidden="true">
+                  <img src="./assets/star.svg" alt="" class="testimonials__star-icon" aria-hidden="true">
+                </div>
+                <div class="testimonials__author">
+                  <span class="testimonials__author-name">Sarah Mitchell</span>
+                  <span class="testimonials__author-role">Real Estate Investor</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonials__slide" data-index="2">
+              <div class="testimonials__media-wrap">
+                <div class="testimonials__bg-layer"></div>
+                <div class="testimonials__img-frame">
+                  <img
+                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80"
+                    alt="Elena Rossi - First-time Homebuyer"
+                    class="testimonials__img"
+                  >
+                </div>
+              </div>
+              <div class="testimonials__content">
+                <div class="testimonials__quote-icon" aria-hidden="true">
+                  <svg width="32" height="25" viewBox="0 0 32 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 14.13 19.05 C 14.13 20.55, 13.53 21.87, 12.32 22.99 C 11.11 24.12, 9.68 24.68, 8.04 24.68 C 5.45 24.68, 3.47 23.82, 2.08 22.11 C 0.69 20.4, 0 18.04, 0 15.01 C 0 12.2, 1.19 9.36, 3.58 6.5 C 5.96 3.64, 8.84 1.48, 12.2 0 L 13.75 2.5 C 11.09 3.79, 9 5.29, 7.5 7 C 5.99 8.71, 5.12 10.78, 4.89 13.22 L 6.86 13.22 C 8.32 13.22, 9.51 13.38, 10.43 13.71 C 11.34 14.04, 12.09 14.5, 12.65 15.08 C 13.19 15.64, 13.57 16.27, 13.8 16.95 C 14.02 17.62, 14.13 18.33, 14.13 19.05 Z M 31.46 19.05 C 31.46 20.55, 30.86 21.87, 29.65 22.99 C 28.44 24.12, 27.01 24.68, 25.37 24.68 C 22.78 24.68, 20.8 23.82, 19.41 22.11 C 18.03 20.4, 17.33 18.04, 17.33 15.01 C 17.33 12.2, 18.52 9.36, 20.91 6.5 C 23.29 3.64, 26.17 1.48, 29.53 0 L 31.08 2.5 C 28.42 3.79, 26.34 5.29, 24.83 7 C 23.32 8.71, 22.45 10.78, 22.22 13.22 L 24.2 13.22 C 25.65 13.22, 26.84 13.38, 27.76 13.71 C 28.68 14.04, 29.42 14.5, 29.98 15.08 C 30.52 15.64, 30.91 16.27, 31.13 16.95 C 31.35 17.62, 31.46 18.33, 31.46 19.05 Z"/>
+                  </svg>
+                </div>
+                <p class="testimonials__text">As a first-time homebuyer I was nervous, but Reanty's team guided me through every step. The experience was smooth, transparent, and truly stress-free from start to finish.</p>
+                <div class="testimonials__stars" aria-label="5 out of 5 stars">
+                  <img src="./assets/star.svg" alt="" class="testimonials__star-icon" aria-hidden="true">
+                  <img src="./assets/star.svg" alt="" class="testimonials__star-icon" aria-hidden="true">
+                  <img src="./assets/star.svg" alt="" class="testimonials__star-icon" aria-hidden="true">
+                  <img src="./assets/star.svg" alt="" class="testimonials__star-icon" aria-hidden="true">
+                  <img src="./assets/star.svg" alt="" class="testimonials__star-icon" aria-hidden="true">
+                </div>
+                <div class="testimonials__author">
+                  <span class="testimonials__author-name">Elena Rossi</span>
+                  <span class="testimonials__author-role">First-time Homebuyer</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="testimonials__nav testimonials__nav--prev" id="testimonials-prev" aria-label="Previous testimonial">
+            <img src="./assets/Arrow - Right.svg" alt="" class="testimonials__nav-icon" aria-hidden="true">
+          </button>
+          <button class="testimonials__nav testimonials__nav--next" id="testimonials-next" aria-label="Next testimonial">
+            <img src="./assets/Arrow - Right.svg" alt="" class="testimonials__nav-icon" aria-hidden="true">
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 12. PROJECTS / NEWSLETTER SECTION -->
+    <section class="projects" id="projects" aria-label="Successful Projects">
+      <div class="container">
+
+        <div class="projects__header">
+          <h2 class="projects__title">We build more projects<br>successful</h2>
+        </div>
+
+        <div class="projects__grid">
+
+          <div class="projects__card">
+            <div class="projects__card-media">
+              <img
+                src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=800&q=80"
+                alt="San Francisco, California"
+                class="projects__card-img"
+              >
+              <div class="projects__card-overlay"></div>
+            </div>
+            <div class="projects__card-content">
+              <h3 class="projects__card-title">San Francisco, California</h3>
+              <a href="#properties" class="projects__card-btn">
+                <span>See more</span>
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M1 1L6 6L1 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Washington DC -->
+          <div class="projects__card">
+            <div class="projects__card-media">
+              <img
+                src="https://images.unsplash.com/photo-1501436513145-30f24e19fcc8?auto=format&fit=crop&w=800&q=80"
+                alt="Washington DC"
+                class="projects__card-img"
+              >
+              <div class="projects__card-overlay"></div>
+            </div>
+            <div class="projects__card-content">
+              <h3 class="projects__card-title">Washington DC</h3>
+              <a href="#properties" class="projects__card-btn">
+                <span>See more</span>
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M1 1L6 6L1 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Chicago -->
+          <div class="projects__card">
+            <div class="projects__card-media">
+              <img
+                src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&w=800&q=80"
+                alt="Chicago"
+                class="projects__card-img"
+              >
+              <div class="projects__card-overlay"></div>
+            </div>
+            <div class="projects__card-content">
+              <h3 class="projects__card-title">Chicago</h3>
+              <a href="#properties" class="projects__card-btn">
+                <span>See more</span>
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M1 1L6 6L1 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /.projects__grid -->
+
+        <!-- Form đăng ký nhận tin (Newsletter - Ifta Label pattern) -->
+        <div class="projects__newsletter">
+          <form class="projects__newsletter-form" id="newsletter-form" action="#" method="POST">
+            <div class="projects__newsletter-input-wrap">
+              <!-- Icon phong bì thư màu cam -->
+              <svg class="projects__newsletter-icon" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 4L10 9L2 4V2L10 7L18 2V4Z" fill="currentColor"/>
+              </svg>
+              <!-- Ifta Label: Infield Top-Aligned Label -->
+              <div class="projects__ifta-label">
+                <input
+                  type="email"
+                  class="projects__newsletter-input"
+                  id="newsletter-email"
+                  placeholder=" "
+                  required
+                  aria-label="Email address"
+                >
+                <label for="newsletter-email" class="projects__newsletter-label">Enter your email here</label>
+              </div>
+            </div>
+            <button type="submit" class="projects__newsletter-btn" id="newsletter-btn">
+              Subscribe
+            </button>
+          </form>
+        </div>
+
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ==================== 13. BLOG SECTION ==================== -->
+    <section class="blog" id="blog" aria-label="From Our Blog">
+      <div class="container">
+
+        <!-- Tiêu đề & mô tả section -->
+        <div class="blog__header">
+          <h2 class="blog__title">From our blog</h2>
+          <p class="blog__desc">Find your suitable house here and stay safe and relaxe with pleasure</p>
+        </div>
+
+        <!-- Lưới 3 card blog (chiều rộng 368px, chiều cao 504px chuẩn Figma) -->
+        <div class="blog__grid">
+
+          <!-- Card 1 -->
+          <article class="blog__card">
+            <div class="blog__card-media">
+              <img
+                src="./assets/images/products/blog-1.jpg"
+                alt="How to rent a home very easily?"
+                class="blog__card-img"
+                width="368"
+                height="240"
+                loading="lazy"
+              >
+            </div>
+            <div class="blog__card-body">
+              <div class="blog__card-main">
+                <h3 class="blog__card-title">
+                  <a href="#">How to rent a home very easily?</a>
+                </h3>
+                <div class="blog__card-category">
+                  <svg class="blog__category-icon" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M1 2C1 1.44772 1.44772 1 2 1H12C12.5523 1 13 1.44772 13 2V15L7 11.5L1 15V2Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Rentals</span>
+                </div>
+                <p class="blog__card-desc">
+                  How to rent a home very easily in this pandemic situation. You can rent house through using our platfrom...
+                </p>
+              </div>
+              <div class="blog__card-meta">
+                <div class="blog__meta-item">
+                  <svg class="blog__meta-icon" width="15" height="15" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect x="1.5" y="2.5" width="13" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M1.5 6.5H14.5" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M5 1V3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M11 1V3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <span>3 years ago</span>
+                </div>
+                <div class="blog__meta-item">
+                  <svg class="blog__meta-icon" width="15" height="15" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="8" cy="4.5" r="3" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M2.5 14C2.5 11.2386 4.96243 9 8 9C11.0376 9 13.5 11.2386 13.5 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <span>By <strong class="blog__author-name">Mike Hesson</strong></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="blog__card">
+            <div class="blog__card-media">
+              <img
+                src="./assets/images/products/blog-2.jpg"
+                alt="How to rent a home very easily?"
+                class="blog__card-img"
+                width="368"
+                height="240"
+                loading="lazy"
+              >
+            </div>
+            <div class="blog__card-body">
+              <div class="blog__card-main">
+                <h3 class="blog__card-title">
+                  <a href="#">How to rent a home very easily?</a>
+                </h3>
+                <div class="blog__card-category">
+                  <svg class="blog__category-icon" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M1 2C1 1.44772 1.44772 1 2 1H12C12.5523 1 13 1.44772 13 2V15L7 11.5L1 15V2Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Rentals</span>
+                </div>
+                <p class="blog__card-desc">
+                  How to rent a home very easily in this pandemic situation. You can rent house through using our platfrom...
+                </p>
+              </div>
+              <div class="blog__card-meta">
+                <div class="blog__meta-item">
+                  <svg class="blog__meta-icon" width="15" height="15" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect x="1.5" y="2.5" width="13" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M1.5 6.5H14.5" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M5 1V3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M11 1V3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <span>3 years ago</span>
+                </div>
+                <div class="blog__meta-item">
+                  <svg class="blog__meta-icon" width="15" height="15" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="8" cy="4.5" r="3" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M2.5 14C2.5 11.2386 4.96243 9 8 9C11.0376 9 13.5 11.2386 13.5 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <span>By <strong class="blog__author-name">Mike Hesson</strong></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="blog__card">
+            <div class="blog__card-media">
+              <img
+                src="./assets/images/products/blog-3.jpg"
+                alt="How to rent a home very easily?"
+                class="blog__card-img"
+                width="368"
+                height="240"
+                loading="lazy"
+              >
+            </div>
+            <div class="blog__card-body">
+              <div class="blog__card-main">
+                <h3 class="blog__card-title">
+                  <a href="#">How to rent a home very easily?</a>
+                </h3>
+                <div class="blog__card-category">
+                  <svg class="blog__category-icon" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M1 2C1 1.44772 1.44772 1 2 1H12C12.5523 1 13 1.44772 13 2V15L7 11.5L1 15V2Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Rentals</span>
+                </div>
+                <p class="blog__card-desc">
+                  How to rent a home very easily in this pandemic situation. You can rent house through using our platfrom...
+                </p>
+              </div>
+              <div class="blog__card-meta">
+                <div class="blog__meta-item">
+                  <svg class="blog__meta-icon" width="15" height="15" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect x="1.5" y="2.5" width="13" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M1.5 6.5H14.5" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M5 1V3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M11 1V3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <span>3 years ago</span>
+                </div>
+                <div class="blog__meta-item">
+                  <svg class="blog__meta-icon" width="15" height="15" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="8" cy="4.5" r="3" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M2.5 14C2.5 11.2386 4.96243 9 8 9C11.0376 9 13.5 11.2386 13.5 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <span>By <strong class="blog__author-name">Mike Hesson</strong></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="blog__footer">
+          <a href="#" class="blog__btn">Read All</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-label="Contact Us">
+      <div class="container">
+
+        <div class="contact__header">
+          <span class="contact__subtitle">Contact with us</span>
+          <h2 class="contact__title">Looking For To Buy A Property?</h2>
+        </div>
+
+        <div class="contact__grid">
+
+          <div class="contact__left">
+            <div class="contact__info">
+              <p class="contact__desc">
+                Browse our property listing and find your best and suitable home or house for sale, rent and buying. It’s so easy and fast.
+              </p>
+
+              <ul class="contact__checklist">
+                <li class="contact__check-item">
+                  <svg class="contact__check-icon" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M1.5 6L5.5 10L14.5 1.5" stroke="#FF5A3C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span class="contact__check-text">Archit ecto beatae vitae dicta sunt</span>
+                </li>
+                <li class="contact__check-item">
+                  <svg class="contact__check-icon" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M1.5 6L5.5 10L14.5 1.5" stroke="#FF5A3C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span class="contact__check-text contact__check-text--nowrap">Largest global RealEstate market</span>
+                </li>
+                <li class="contact__check-item">
+                  <svg class="contact__check-icon" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M1.5 6L5.5 10L14.5 1.5" stroke="#FF5A3C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span class="contact__check-text">Nor again is there anyone</span>
+                </li>
+              </ul>
+
+              <div class="contact__decor" aria-hidden="true">
+                <div class="contact__decor-orange"></div>
+                <div class="contact__decor-black"></div>
+              </div>
+            </div>
+
+            <div class="contact__images" aria-hidden="true">
+              <div class="contact__img-frame contact__img-frame--one">
+                <img
+                  src="./assets/images/products/contact-img-1.jpg"
+                  alt="Modern House Exterior"
+                  class="contact__img"
+                  width="278"
+                  height="204"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="contact__img-frame contact__img-frame--two">
+                <img
+                  src="./assets/images/products/contact-img-2.jpg"
+                  alt="Luxury Villa Architecture"
+                  class="contact__img"
+                  width="433"
+                  height="238"
+                  loading="lazy"
+                >
+              </div>
+            </div>
+
+          </div>
+
+          <div class="contact__form-card">
+            <h3 class="contact__form-title">Contact Us</h3>
+
+            <form class="contact__form" id="contact-form" action="#" method="POST">
+              <div class="contact__field">
+                <label for="contact-name" class="contact__label">Name</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  class="contact__input"
+                  placeholder="Enter your name"
+                  required
+                >
+              </div>
+
+              <div class="contact__field">
+                <label for="contact-email" class="contact__label">Email</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  class="contact__input"
+                  placeholder="Enter your email"
+                  required
+                >
+              </div>
+
+              <div class="contact__field">
+                <label for="contact-message" class="contact__label">Message</label>
+                <textarea
+                  id="contact-message"
+                  class="contact__textarea"
+                  placeholder="Enter your message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="contact__btn" id="contact-btn">
+                Send
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="footer" aria-label="Footer">
+    <div class="container footer__container">
+
+      <div class="footer__top">
+
+        <div class="footer__col footer__col--brand">
+          <a href="./" class="footer__logo" aria-label="Reanty Trang chủ">
+            <svg class="footer__logo-icon" width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M14 2L2 12.5H5.5V24H11V17.5H17V24H22.5V12.5H26L14 2Z" fill="#FF5A3C"/>
+              <path d="M20 5V9.2L23 11.8V5H20Z" fill="#FF5A3C"/>
+            </svg>
+            <span class="footer__logo-text">Reanty<span class="footer__logo-dot">.</span></span>
+          </a>
+
+          <p class="footer__brand-desc footer__brand-desc--desktop">
+            With over 1 million homes<br>
+            for sale available on the<br>
+            website.
+          </p>
+          <p class="footer__brand-tagline">Find your next home with confidence.</p>
+
+          <ul class="footer__socials" aria-label="Social links">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link" aria-label="Facebook">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.6 5H18V0h-3.808C10.597 0 9 1.583 9 4.615V8z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link" aria-label="Twitter">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col--navs">
+          <div class="footer__nav-col" data-section="company">
+            <h3 class="footer__col-title">
+              <span class="footer__col-num">01</span>
+              <span>Company</span>
+            </h3>
+            <ul class="footer__nav-grid">
+              <li class="footer__nav-item"><a href="#about" class="footer__nav-link">About</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Careers</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Mobile</a></li>
+              <li class="footer__nav-item"><a href="#blog" class="footer__nav-link">Blog</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">How we work?</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-col" data-section="contact">
+            <h3 class="footer__col-title">
+              <span class="footer__col-num">02</span>
+              <span>Contact</span>
+            </h3>
+            <ul class="footer__nav-grid">
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Help / FAQ</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Press</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Affiliates</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Property owners</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Partners</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-col" data-section="explore">
+            <h3 class="footer__col-title">
+              <span class="footer__col-num">03</span>
+              <span>Explore</span>
+            </h3>
+            <ul class="footer__nav-grid">
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Land fees</a></li>
+              <li class="footer__nav-item"><a href="#properties" class="footer__nav-link">Property</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Law tips</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Gadgets</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">Privacy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__col footer__col--office">
+          <div class="footer__office-block">
+            <h3 class="footer__col-title">Head Office</h3>
+            <address class="footer__address">
+              Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22, Charlottesville, CA 45565
+            </address>
+          </div>
+
+          <div class="footer__newsletter-block">
+            <h3 class="footer__col-title">Newsletter</h3>
+            <form class="footer__newsletter-form" id="footer-newsletter-form">
+              <div class="footer__form-group">
+                <input
+                  type="email"
+                  id="footer-email"
+                  class="footer__newsletter-input"
+                  placeholder=" "
+                  required
+                  aria-label="Enter your email address"
+                >
+                <label for="footer-email" class="footer__newsletter-label">Enter your email address</label>
+                <button type="submit" class="footer__newsletter-btn" aria-label="Subscribe newsletter">
+                  <svg class="footer__newsletter-icon" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M1 3C1 1.89543 1.89543 1 3 1H17C18.1046 1 19 1.89543 19 3V13C19 14.1046 18.1046 15 17 15H3C1.89543 15 1 14.1046 1 13V3Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.5 2.5L10 9L18.5 2.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__middle">
+        <div class="footer__middle-left">
+          <a href="mailto:email@gmail.com" class="footer__contact-link">email@gmail.com</a>
+        </div>
+        <div class="footer__middle-center">
+          <a href="tel:1234567890" class="footer__contact-link">(123) 456-7890</a>
+        </div>
+        <div class="footer__middle-right">
+          <p class="footer__copyright">© 2021 Aeyman Megha. All rights reserved.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom-bar" aria-hidden="true"></div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+
+</body>
+</html>
